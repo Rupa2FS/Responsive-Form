@@ -1,0 +1,193 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #fff1eb 20%, #ace0f9 80%);
+}
+
+.container {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+
+
+.container header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 5px;
+    width: 27px;
+    border-radius: 8px;
+    color: #265df2;
+}
+
+
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.container form .form{
+    position: absolute;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+
+
+.container form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+
+
+.container form .fields{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+
+.input-field label{
+    font-size: 15px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input-field input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #060606d1;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 10px 0;
+}
+
+
+.input-field select:focus{
+    box-shadow: 0 3px 6px rgba(139, 115, 234, 0.13);
+}
+
+
+.input-field input:focus {
+    box-shadow: 0 3px 6px rgba(139, 115, 234, 0.13);
+}
+
+
+.input-field select,
+.input-field input[type="date"]{
+    color: #707070;
+}
+
+.input-field input[type="date"]:valid{
+    color: #333;
+}
+
+
+.input-field-1 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #2e2e2e;
+    padding: 2 13px;
+    height: 42px;
+    margin: 10px 0;
+    padding-top: 10px;
+}
+
+.input-field-2 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #2e2e2e;
+    padding: 2 13px;
+    height: 42px;
+    margin: 10px 0;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+.radio1 {
+    padding-top: 20px;
+}
+
+.radio2 {
+    padding-top: 20px;
+}
+
+.skills {
+    padding-top: 15px;
+}
+
+#click {
+    padding-top: 50px;
+    padding-left: 290px;
+   
+}
+
+.btn {
+    padding: 10px 60px;
+    background: #265df2;
+    color: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 15px;
+}
+
+.btn:hover{
+    background-color: #86a1ea;
+}
+
+
+
+.output {
+    box-sizing: border-box;
+    
+    width: 50%;
+    text-align: left;
+    justify-content: left;
+    justify-items: left;
+    
+    
+    background-color: #f2f3f3 ;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+   
+    padding-bottom: 100px;
+   
+}
+

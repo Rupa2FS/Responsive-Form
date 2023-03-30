@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Regisration Form</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action='#' id="form-user" method="post" autocomplete="off">
+            <header>Login Form</header>
+
+            <div class="fields">
+
+                <div class="input-field">
+                    <label>First Name</label>
+                    <input type="text" name="F-name" id="fname" placeholder="Enter your First name" autofocus required>
+                </div>
+
+                <div class="input-field">
+                    <label>Last Name</label>
+                    <input type="text" name="L-name" id="lname" placeholder="Enter your Last name" required>
+                </div>
+
+                <div class="input-field">
+                    <label>Mobile Number</label>
+                    <input type="tel" name="Telephone" id="telephone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                </div>
+
+                <div class="input-field">
+                    <label>Email</label>
+                    <input type="email" name="Email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-field">
+                    <label>Date of Birth</label>
+                    <input type="date" name="DOB" id="DOB" placeholder="Enter birth date" required>
+                </div>
+
+                <div class="input-field">
+                    <label>Age</label>
+                    <input type="number" name="Age" id="age" min="18" max="25" required>
+                </div>
+
+                <div class="input-field-1">
+                    <label>Gender:
+                        <div class="radio1">
+                            <input type="radio" id="male" name="gender" value="male" class="gender" required> Male
+                            <input type="radio" id="female" name="gender" value="female" style="margin-left: 15px;"
+                                class="gender" required> Female
+                            <input type="radio" id="other" name="gender" value="other" style="margin-left: 15px;"
+                                class="gender" required> Other
+                        </div>
+                    </label>
+                </div>
+
+
+                <div class="input-field-2">
+                    <label>Occupation:</label>
+                    <div class="radio2">
+                        <input type="radio" id="student" name="Student" value="Student" class="Occupation">
+                        Student
+                        <input type="radio" id="employee" name="Employee" value="Employee" style="margin-left: 15px;"
+                            class="Occupation"> Employee
+                    </div>
+
+                </div>
+
+                <div class="input-field">
+                    <label class="skills">Technical skills you know:</label>
+
+                    <select id="skills" name="skills" required>
+                        <option disabled selected value="">Select Skills</option>
+                        <option>HTML, JavaScript </option>
+                        <option>HTML, CSS</option>
+                        <option>JavaScript, node.js</option>
+                        <option>JavaScript, TypeScript</option>
+                        <option>Front-end skills</option>
+                    </select>
+
+                </div>
+
+                <div id="click">
+
+                    <button name="submit" type="button" class="btn" id='button'>Submit</button>
+
+                </div>
+
+
+
+            </div>
+        </form>
+
+
+    </div>
+
+    <p class="output" id="output1"></p>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
